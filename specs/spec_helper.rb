@@ -1,7 +1,7 @@
 require 'minitest'
 require 'minitest/spec'
 require "minitest/autorun"
+require "minitest/reporters"
 require 'minitest/pride'
 
-# Files to test
-require_relative '../roman'
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
